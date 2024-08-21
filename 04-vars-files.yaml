@@ -1,7 +1,7 @@
-- name: variables from files 
+- name: variables from files # we are writing this script to calling the variables.yaml script here 
   hosts: localhost 
   vars_files: 
-  - variables.yaml
+  - variables.yaml #this is variables.yaml file refering here 
   tasks: 
   - name: printing varibles
     ansible.builtin.debug:
