@@ -1,8 +1,8 @@
-#playbook
+#playbook is list if plays always it should start with - 
 
 - name: ping the node
   hosts: mongodb
-  become: yes
+  
 
 #this is of tasks/modules/collection
 
