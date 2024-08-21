@@ -1,12 +1,13 @@
 #playbook
 
-name: ping the node
-hosts: mongodb
+- name: ping the node
+  hosts: mongodb
+  become: yes
 
 #this is of tasks/modules/collection
 
-tasks: 
-- name: pinging the server
+  tasks: 
+  - name: pinging the server
 
 #this is the map 
-  ansible.builtin.ping:
+    ansible.builtin.ping:
