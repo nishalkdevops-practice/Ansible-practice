@@ -3,7 +3,7 @@
 
   #vars are the play level only 
   vars: 
-    COURSE: DevOps
+    COURSE: DevOps with AWS
     TRAINER: nishal
     DURATION: 150HR 
   tasks: 
