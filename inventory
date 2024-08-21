@@ -1,3 +1,12 @@
 [mongodb]
 
 roboshop-us-dev-mongodb.nishalkdevops.online
+
+[mongodb]
+
+172.31.34.42
+
+[mongodb:vars]
+MONGO_USERNAME=mongodbadmin
+MONGO_DB=categories
+NAME=Nishal-inventory
