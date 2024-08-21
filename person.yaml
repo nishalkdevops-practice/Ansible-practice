@@ -1,0 +1,15 @@
+name: nishal #this is key value pair format
+dob: 09-03-1999
+
+address: 
+  city: hyd       #this is map format
+  country: IND
+  state: AP
+  zip: 5170001
+address: 
+- type: perm      #this is list format
+  city: 
+  country: 
+-type: temp
+  city: 
+  country: 
