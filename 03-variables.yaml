@@ -5,8 +5,7 @@
   vars: 
     COURSE: DevOps
     TRAINER: nishal
-    DURATION: 150HR
-  vars: 
+    DURATION: 150HR 
   tasks: 
   - name: print hello world
     ansible.builtin.debug:
