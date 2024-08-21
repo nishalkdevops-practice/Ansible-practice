@@ -4,8 +4,8 @@
   vars: 
     NAME: Nishal-play
 
-  vars_files: 
-  - variables.yaml
+  # vars_files: 
+  # - variables.yaml
 
   vars_prompt: 
   - name: NAME
@@ -20,4 +20,5 @@
 
       #Preferences: 
       #1.command line variables
-      #2.Task level  
+      #2.Task level 
+      #3.files level  
