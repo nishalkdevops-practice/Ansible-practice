@@ -1,0 +1,6 @@
+- name: variables in ansible
+  hosts: mongodb
+  become: localhost
+  tasks: 
+    ansible.builtin.debug:
+      msg: "Please retain the user now"
