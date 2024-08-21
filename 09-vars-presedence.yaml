@@ -1,0 +1,24 @@
+- name: testing variable presedence #it means we are checking here which variable is perfoming operation faster from the above mentioned all the variables 
+  hosts: mongodb
+
+  vars: 
+    NAME: Nishal-play
+
+  vars_files: 
+  - variables.yaml
+
+  vars_prompt: 
+  - name: NAME
+    prompt: Please enter Trainer name
+    private: false
+
+  tasks: 
+  - name: variable at task level
+    vars: 
+      NAME: Nishal-task
+    ansible.builtin.debug: 
+      msg: "Trainer name is: {{NAME}}"
+
+
+      #Preferences: 
+      1. 
