@@ -1,8 +1,8 @@
 - name: varaibles from prompt #this script we are writing to prompt the user itself to enter the values 
   hosts: localhost 
-  vars_prompt
+  vars_prompt: 
   - name: USERNAME
-    prompt: Plese enter your name
+    prompt: Plese enter your username
     private: false # we can see value enterd on screen 
   - name: PASSWORD
     prompt: Please enter your password
