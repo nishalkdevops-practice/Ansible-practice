@@ -1,6 +1,5 @@
 - name: variables in ansible
   hosts: mongodb
-  become: localhost
   tasks: 
   - name: print hello world
     ansible.builtin.debug:
