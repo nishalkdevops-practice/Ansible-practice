@@ -11,5 +11,5 @@
     ansible.builtin.debug:
       msg: "Hi from the Hellow world from ansible server"
   - name: print variables
-  ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "Hi I'm learning {{COURSE}}, Trainer is {{TRAINER}}, Total duration is {{DURATION}}"
