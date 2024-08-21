@@ -2,5 +2,6 @@
   hosts: mongodb
   become: localhost
   tasks: 
+  - name: print hello world
     ansible.builtin.debug:
       msg: "Please retain the user now"
