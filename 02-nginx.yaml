@@ -2,10 +2,10 @@
   hosts: mongodb
   tasks: 
   - name: Install nginx
-    yum: 
+    ansible.builtin.yum: 
       name: nginx
       state: latest
-    service: 
+    ansible.builtin.service: 
       name: nginx
       state: started
 
