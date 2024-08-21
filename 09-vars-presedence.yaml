@@ -14,11 +14,10 @@
 
   tasks: 
   - name: variable at task level
-    vars: 
-      NAME: Nishal-task
     ansible.builtin.debug: 
       msg: "Trainer name is: {{NAME}}"
 
 
       #Preferences: 
-      #1.command line variables 
+      #1.command line variables
+      #2.Task level  
