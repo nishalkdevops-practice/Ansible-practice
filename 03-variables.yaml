@@ -13,3 +13,5 @@
   - name: print variables
     ansible.builtin.debug:
       msg: "Hi I'm learning {{COURSE}}, Trainer is {{TRAINER}}, Total duration is {{DURATION}}"
+
+      
