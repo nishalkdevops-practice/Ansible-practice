@@ -1,0 +1,13 @@
+- name: loops in ansible 
+  hosts: localhost
+
+  tasks: 
+  - name: print the names
+    ansible.builtin.debug: 
+      msg: "hello {{item}}" #in this iteam itself all the componenents mentioned in the loop will circulate
+
+    loop: 
+    - Nishal
+    - Kirrak
+    - Ramesh
+    - golti
