@@ -4,7 +4,7 @@ roboshop-us-dev-mongodb.nishalkdevops.online
 
 [mongodb]
 
-172.31.34.42
+172.31.86.4
 
 [mongodb:vars]
 MONGO_USERNAME=mongodbadmin
