@@ -18,18 +18,22 @@
 
   tasks: 
   - name: print number variable
-    msg: "{{AGE}}"
+    ansible.built.in.debug: 
+      msg: "{{AGE}}"
 
-  - name: print string variable 
-    msg: "{{NAME}}"
+  - name: print string variable
+    ansible.built.in.debug: 
+      msg: "{{NAME}}"
 
   - name: print boolean variable 
-    msg: "{{FeildDevops}}"
+    ansible.built.in.debug:
+      msg: "{{FeildDevops}}"
 
   - name: print list variables 
-    msg: "{{skills}}"
+    ansible.built.in.debug:
+      msg: "{{skills}}"
 
-  - name: print experinece 
-    msg: "{{Experience}}"
+  - name: print experinece
+    ansible.built.in.debug: 
+      msg: "{{Experience}}"
 
-    
