@@ -12,6 +12,6 @@
 
   - name: print the command output
     ansible.builtin.debug: 
-      msg: "output of command is: {{register}}" 
+      msg: "output of command is: {{output}}" 
 
 
