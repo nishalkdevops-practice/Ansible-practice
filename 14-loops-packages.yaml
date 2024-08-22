@@ -1,0 +1,21 @@
+- name: install multipackages in ansible 
+  hosts: localhost
+  become: yes
+
+  tasks: 
+  - name: install packages
+    ansible.builtin.yum: 
+      name: "{{item}}"
+      state: installed
+
+    ansible.builtin.service: 
+      name: "{{item}}"
+      state: started
+
+    loop: 
+    - nginx
+    - postmap
+
+    # ansible.builtin.service: 
+    #   name: "{{item}}"
+    #   state: started
