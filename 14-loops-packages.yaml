@@ -8,10 +8,10 @@
       name: "{{item}}"
       state: installed
 
-  # - name: start packages
-  #   ansible.builtin.service: 
-  #     name: "{{item}}"
-  #     state: started
+  - name: start packages
+    ansible.builtin.service: 
+      name: "{{item}}"
+      state: started
 
     loop: 
     - nginx
