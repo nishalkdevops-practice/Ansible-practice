@@ -1,0 +1,17 @@
+- name: install multipackages in ansible 
+  hosts: mongodb
+  become: yes
+
+  tasks: 
+  - name: install packages
+    ansible.builtin.yum: 
+      name: "{{item}}"
+      state: installed
+
+      #list of map 
+    loop: 
+    - {name: 'nginx', state: 'absent'}
+    - {name: 'postfix', state: 'installed'}
+    - {name: 'mailx', state: 'absent'}
+
+    
