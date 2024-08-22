@@ -5,8 +5,8 @@
   tasks: 
   - name: install packages
     ansible.builtin.yum: 
-      name: "{{item}}"
-      state: installed
+      name: "{{item.name}}"
+      state: "{{item.state}}"
 
       #list of map 
     loop: 
@@ -14,4 +14,3 @@
     - {name: 'postfix', state: 'installed'}
     - {name: 'mailx', state: 'absent'}
 
-    
