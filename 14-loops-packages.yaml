@@ -15,7 +15,8 @@
 
     loop: 
     - nginx
-    - postmap
+    - postfix
+    - mailx
 
     # ansible.builtin.service: 
     #   name: "{{item}}"
