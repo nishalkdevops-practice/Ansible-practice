@@ -1,0 +1,35 @@
+- name: ansible variables data types
+  hosts: localhost
+  vars: 
+  - AGE: 30 #this is number 
+  - NAME: "Nishal" #this is string
+  - FeildDevops: True #this is boolean
+  - skills: #this is list 
+    - DevOps
+    - AWS
+    - Dynatrace
+    - JIRA 
+    - SQ
+    - NAgios
+  - Experience: #this map 
+    DevOps: 1
+    AWS: 5
+    Jira: 3
+
+  tasks: 
+  - name: print number variable
+    msg: "{{AGE}}"
+
+  - name: print string variable 
+    msg: "{{NAME}}"
+
+  - name: print boolean variable 
+    msg: "{{FeildDevops}}"
+
+  - name: print list variables 
+    msg: "{{skills}}"
+
+  - name: print experinece 
+    msg: "{{Experience}}"
+
+    
