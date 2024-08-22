@@ -12,9 +12,9 @@
     - SQ
     - NAgios
   - Experience: #this map 
-    DevOps: 1
-    AWS: 5
-    Jira: 3
+      DevOps: 1
+      AWS: 5
+      Jira: 3
 
   tasks: 
   - name: print number variable
