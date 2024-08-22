@@ -1,7 +1,7 @@
 - name: simple condition
   hosts: localhost
   vars: 
-    Name: DevOps
+    NAME: DevOps
   
   tasks: 
   - name: run this name is DevOps
