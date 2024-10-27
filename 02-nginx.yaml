@@ -1,5 +1,5 @@
 - name: install and run nginx #name is not mandatory just give it for your understanding
-  hosts: mongodb
+  hosts: localhost
   become: yes
   tasks: 
   - name: Install nginx
